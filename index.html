@@ -18,7 +18,7 @@ function updateTime() {
     var hourhand = document.getElementById("hourhand");
 	var sechand = document.getElementById("sechand");
     // 设置相应SVG元素的transform属性控制表针移动
-    minhand.setAttribute("transform", "rotate(" + minangle + ",50,50)");
+    minhand.setAttribute("transform", "rotate(" + minangle + ",50,50)");//rotate里面的50是x坐标和y坐标,等于时钟的半径
     hourhand.setAttribute("transform", "rotate(" + hourangle + ",50,50)");
 	sechand.setAttribute("transform", "rotate(" + secangle + ",50,50)");
     // 每秒钟更新一次
